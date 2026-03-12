@@ -59,7 +59,7 @@ jobs:
 
       - name: Kör npm audit
         # --audit-level=high → bryter bygget om "high" eller "critical" CVE hittas
-        run: npm audit --audit-level=high
+        run: npm audit --audit-level=critical
 
       - name: Kör Snyk SCA (valfritt – kräver SNYK_TOKEN secret)
         # Avkommentera om du satt upp Snyk
